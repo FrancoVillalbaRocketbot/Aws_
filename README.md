@@ -4,7 +4,7 @@
 
 # Aws_S3
   
-Module to connect and manage aws 
+Module to connect and work with AWS 
 
 ## How to install this module
   
@@ -43,4 +43,4 @@ Download a file from a Bucket
 ### License
   
 ![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
-[MIT](http://opensource.org/licenses/mit-license.ph)# Aws_
+[MIT](http://opensource.org/licenses/mit-license.ph)
