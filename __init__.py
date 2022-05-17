@@ -24,7 +24,7 @@ Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
 """
 
 base_path = tmp_global_obj["basepath"]
-cur_path = base_path + "modules" + os.sep + "Aws" + os.sep + "libs" + os.sep
+cur_path = base_path + "modules" + os.sep + "Aws_" + os.sep + "libs" + os.sep
 
 if cur_path not in sys.path:
     sys.path.append(cur_path)
@@ -32,17 +32,19 @@ if cur_path not in sys.path:
 import traceback
 import os
 import sys
+
+from urllib3 import add_stderr_logger
 from s3Object import S3Object
 global session_aws_connect
 module = GetParams("module")
 try:
     if module == "connect":
-
         awsAccessKeyId = GetParams("acces_id")
         awsSecretAccessKey = GetParams("secret_key")
         var_ = GetParams('var_')
         try:
             session_aws_connect = S3Object(awsAccessKeyId, awsSecretAccessKey)
+            print(session_aws_connect)
             connect = True
         except:
             connect = False

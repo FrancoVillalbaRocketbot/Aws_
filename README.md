@@ -4,7 +4,7 @@
 
 # Aws_S3
   
-Module to connect and work with AWS 
+ Module to connect to AWS
 
 ## How to install this module
   
@@ -27,7 +27,7 @@ Get list of objects in a bucket
 4. Upload File  
 Upload a file to a bucket
 
-5. Donwload File  
+5. Donwload File
 Download a file from a Bucket  
 
 

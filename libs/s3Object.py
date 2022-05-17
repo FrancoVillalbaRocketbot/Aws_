@@ -1,6 +1,7 @@
 import boto3
 import os
 
+
 class S3Object:
     def __init__(self, awsAccessKeyId, awsSecretAccessKey):
         self.session = boto3.Session(aws_access_key_id=awsAccessKeyId, aws_secret_access_key=awsSecretAccessKey)
